@@ -1,0 +1,299 @@
+/*
+Theme Name: Funny Shirt
+Theme URI: 
+Author: Gerard Le Forban
+Author URI: 
+Description: Evaluation Theme Funny Shop
+Version: 1.0
+*/
+
+
+body {
+    background: #f1f1f1;
+    color: #23282d;
+    font-family: Arial, sans-serif;
+    margin: 0;}
+
+/*////////////////////////// 
+///   section header 
+//////////////////////////*/
+
+.nav-menu{
+    /* background-color: darkkhaki; */
+    margin: 1rem;
+    margin-top: 5rem;
+    display: flex;
+}
+
+.bloc-logo{
+    display: flex;
+}
+
+/* la classe custom-logo est générée par WP */
+.custom-logo{
+    width: 6rem;
+    height: 6rem;
+    transition: transform .5s;
+}
+.custom-logo:hover{
+    transform: rotate(15deg);
+}
+
+.wpmenucart-display-standard{
+    padding-top: .5rem;
+    margin-left: 2rem;
+}
+
+/*//////////////////////////////
+///////    section présentation 
+//////////////////////////////*/
+
+.presentation a{
+    background-color: rgb(93, 221, 221);
+    margin: 1rem;
+}
+
+
+
+/*//////////////////////////////
+///////    section actualite 
+//////////////////////////////*/
+
+.actualites{
+    display: flex;
+    justify-content: space-around;
+}
+
+.uneActualite{
+    width: 18rem;
+    height: 25rem;
+    background-color: rgb(231, 231, 231);
+    margin: 1rem;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+.uneActualite:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.uneActualite img{
+    background-color: chartreuse;
+    width: 18rem;
+    height: 12rem;
+}
+.uneActualite h2,p{
+    margin: 0 1rem;
+}
+.uneActualite h2{
+    margin-top: .5rem;
+}
+.uneActualite p{
+    height: 2rem;
+}
+
+.uneActualite .block-bouton{
+    display: flex;
+    justify-content: flex-end;
+    height: 4rem;
+}
+
+.uneActualite .actu-btn{
+    background-color: rgb(93, 221, 221);
+    margin: 1rem;
+}
+/*//////////////////////////////
+///////    section Magasin 
+//////////////////////////////*/
+
+.taxonomie{
+    background-color: rgb(54, 54, 54);
+    color: white;
+    border-radius: 10px  ;
+    padding: 0 10px;
+    width: 100px;
+    margin: 1rem;
+    text-align: center;
+}
+
+/*//////////////////////////////
+///////    page une actualité 
+//////////////////////////////*/
+
+.actuTitre{
+    display: flex;
+}
+.actuTitre h5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.photoetcontenu{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.photoetcontenu .size-post-thumbnail{
+    width: 400px;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+}
+.photoetcontenu .theContent{
+    margin: 1rem;
+}
+
+
+/*//////////////////////////////
+///////    page liste des produits 
+//////////////////////////////*/
+
+/* Utilisation des classes générées par woocommerce */
+
+
+.add_to_cart_inline{
+    border: none !important;
+}
+.woocommerce-Price-amount{
+    margin-right: 1rem;
+}
+
+/*//////////////////////////////
+///////    page un magasin
+//////////////////////////////*/
+.pageMagasin .coordonnee{
+    display: flex;
+}
+.pageMagasin .coordonnee h6{
+    margin-right: 1rem;
+}
+.magasinPhotoEtContenu{
+    display: flex;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+}
+.magasinPhotoEtContenu .size-post-thumbnail{
+    width: 400px;
+    height: auto;
+    border-radius: 20px 0 0 20px;
+}
+.magasinContenu{
+    margin: 1rem;
+} 
+
+
+/*//////////////////////////////
+///////    page contact
+//////////////////////////////*/
+.carteGoogle{
+    margin-bottom: 25rem; /*pour éviter d'avoir la carte google dans le footer*/
+}
+.infoContact{
+    width: 25rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    /* background-color: brown; */
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+.formulaire h5{
+    padding-left: 1rem;
+}
+.formulaire{
+    width: 25rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+/*///////////////////////////////////////////////
+///////   page liste magasins (archive magasin)
+///////////////////////////////////////////////*/
+.unMagasin {
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+.unMagasin a{
+    display: flex;
+    justify-content: space-between;
+}
+
+.unMagasin .blocTexte{
+    width: 200px;
+}
+
+.photoMagasin img{
+    height: 8rem;
+    width: auto;
+}
+
+
+
+/*//////////////////////////////
+///////    footer 
+//////////////////////////////*/
+.sectionFooter{
+    background-color: rgb(63, 63, 63);
+}
+.footerContenu{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+.bloc-logo{
+    margin: 1rem;
+}
+.logo-text{
+    margin: 1rem 0;
+    text-align: center;
+}
+.bloc-logo h3{
+    font-size: x-large;
+}
+.bloc-logo h4{
+    font-size: medium;
+}
+.footerContenu a{
+    color: white;
+    text-decoration: underline;
+}
+
+.footerNav{
+    text-align: center;
+    margin: 1rem;
+}
+.footerNav h4{
+    font-size: medium;
+}
+.footerNav h5{
+    font-size: small;
+}
+.footerContact{
+    text-align: center;
+    margin: 1rem;
+}
+.footerContact h4{
+    font-size: medium;
+
+}
+.footerContact h5{
+    font-size: small;
+
+}
